@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  border-top: 1px solid rgb(206, 206, 206);
+  padding-top: 5px;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2);
+}
+nav .nav {
+  display: flex;
+  list-style: none;
+}
+nav .nav-item {
+  width: 25%;
+}
+nav .nav-item-text {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: gray;
+  width: 100%;
+  align-items: center;
+  padding: 10px;
+}
+
+nav .nav-item-text i {
+  font-size: 40px;
+}/*# sourceMappingURL=style.css.map */

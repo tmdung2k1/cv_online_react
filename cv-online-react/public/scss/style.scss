@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    border-top: 1px solid rgb(206, 206, 206);
+    padding-top: 5px;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2);
+
+    .nav {
+        display: flex;
+        list-style: none;
+
+        // thẻ li
+        &-item {
+            width: 25%;
+        }
+
+        // thẻ a
+        &-item-text {
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            color: gray;
+            width: 100%;
+            align-items: center;
+            padding: 10px;
+            transition: all 0.3s;
+
+            // thẻ i trong thẻ a (icon)
+            .icon {
+                font-size: 30px;
+            }
+
+            &.active {
+                color: cornflowerblue;
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+
+.personal-info {
+    .pictures {
+        position: relative;
+
+        img {
+            max-width: 100%;
+            object-fit: cover;
+        }
+
+        .background>img {
+            height: 25vh;
+            width: 100vw;
+        }
+
+        .avatar>img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            box-shadow: 0 0 0 4px white;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 10%);
+        }
+    }
+}
+
+.show-more {
+    display: block;
+    position: fixed;
+    bottom: 85px;
+    right: 10px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+
+    .sm-container {
+        list-style: none;
+        min-width: 40%;
+
+        a {
+            padding: 10px 5px;
+            display: inline-block;
+            color: black;
+            text-decoration: none;
+            border-bottom: 1px dotted rgb(191, 191, 191);
+        }
+    }
+}
