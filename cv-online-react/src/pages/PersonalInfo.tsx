@@ -7,10 +7,10 @@ return(
 <div className="personal-info">
     <div className="pictures">
         <div className="background ">
-            <img src={ AVT } alt=""/>
+            <img src={ bg } alt=""/>
         </div>
         <div className="avatar ">
-            <img src={ bg } alt=""/>
+            <img src={ AVT } alt=""/>
         </div>
     </div>
 </div>
